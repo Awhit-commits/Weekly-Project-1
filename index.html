@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wage Calculator</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <header><strong>Wage/Salary Calculator</strong></header>
+    <div class="container">
+        <div class="hoursworked">
+            <label for="workedhours">How many hours did you work?</label><br>
+            <input type="number" name="workedhours" id="hoursworked" required>
+        </div>
+       
+        <div class="wage">
+            <label for="wage"> How much is your wage?</label><br>
+            <input type="number" name="wage" id="wage"required>
+        </div>
+        <div class="week">
+            <label for="week-select">Are you paid Weekly or Bi-Weekly?</label>
+            <select name="week" id="week-select">
+                <option value="">Please select an option</option>
+                <option value="weekly">Weekly</option>
+                <option value="bi-weekly">Bi-Weekly</option>
+            </select>
+        </div>
+        <div class="overtime">
+            <label for="overtime">Did you work any overtime?</label>
+            Yes<input type="radio" name="overtime" id="overtimeYes" value="true">
+            No <input type="radio" name="overtime" id="overtimeNo" value = "false"><br>
+            <label for="overtimeInput">If yes, How much overtime was worked?</label><br>
+            <input type="text" id="overtimeInput">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
